@@ -45,7 +45,7 @@ CREATE TABLE menu (
 	name VARCHAR(63) NOT NULL,
 	image VARCHAR(255) NULL DEFAULT NULL,
 	description text NULL,
-	price MEDIUMINT UNSIGNED NOT NULL,
+	price MEDIUMINT NOT NULL,
 	created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	modified_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	menu_status_id TINYINT UNSIGNED NOT NULL,
@@ -66,7 +66,7 @@ CREATE TABLE option_detail (
 	option_detail_id MEDIUMINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 	menu_option_id SMALLINT UNSIGNED NOT NULL,
 	menu_id SMALLINT UNSIGNED NOT NULL,
-	price MEDIUMINT UNSIGNED NOT NULL,
+	price MEDIUMINT NOT NULL,
 	created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	modified_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	menu_status_id TINYINT UNSIGNED NOT NULL
@@ -90,7 +90,7 @@ CREATE TABLE sale_status (
 CREATE TABLE sale (
 	sale_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 	kiosk_id SMALLINT UNSIGNED NOT NULL,
-	price MEDIUMINT UNSIGNED NOT NULL,
+	price MEDIUMINT NOT NULL,
 	payment_response BOOLEAN NOT NULL,
 	created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	completed_at DATETIME NULL,
@@ -106,38 +106,38 @@ CREATE TABLE sale_item (
 	sale_id INT UNSIGNED NOT NULL,
 	menu_id SMALLINT UNSIGNED NOT NULL,
 	item_sequence TINYINT UNSIGNED NOT NULL,
-	price MEDIUMINT UNSIGNED NOT NULL,
+	price MEDIUMINT NOT NULL,
 	quantity TINYINT UNSIGNED NOT NULL DEFAULT 1
 );
 
 ALTER TABLE user
-    ADD CONSTRAINT FK_user_user_role_id FOREIGN KEY (user_role_id) REFERENCES user_role(user_role_id);
+   ADD CONSTRAINT FK_user_user_role_id FOREIGN KEY (user_role_id) REFERENCES user_role(user_role_id);
 
 ALTER TABLE kiosk
-    ADD CONSTRAINT FK_kiosk_user_id FOREIGN KEY (user_id) REFERENCES user(user_id);
+   ADD CONSTRAINT FK_kiosk_user_id FOREIGN KEY (user_id) REFERENCES user(user_id);
 
 ALTER TABLE menu
-    ADD CONSTRAINT FK_mnus_menu_status_id FOREIGN KEY (menu_status_id) REFERENCES menu_status(menu_status_id),
-    ADD CONSTRAINT FK_menu_category_id FOREIGN KEY (category_id) REFERENCES category(category_id);
+   ADD CONSTRAINT FK_mnus_menu_status_id FOREIGN KEY (menu_status_id) REFERENCES menu_status(menu_status_id),
+   ADD CONSTRAINT FK_menu_category_id FOREIGN KEY (category_id) REFERENCES category(category_id);
 
 ALTER TABLE menu_option
-    ADD CONSTRAINT FK_mnus_option_menu_id FOREIGN KEY (menu_id) REFERENCES menu(menu_id),
-    ADD CONSTRAINT FK_mnus_options_menu_status_id FOREIGN KEY (menu_status_id) REFERENCES menu_status(menu_status_id);
+   ADD CONSTRAINT FK_mnus_option_menu_id FOREIGN KEY (menu_id) REFERENCES menu(menu_id),
+   ADD CONSTRAINT FK_mnus_options_menu_status_id FOREIGN KEY (menu_status_id) REFERENCES menu_status(menu_status_id);
 
 ALTER TABLE option_detail
-    ADD CONSTRAINT FK_otions_details_menu_option_id FOREIGN KEY (menu_option_id) REFERENCES menu_option(menu_option_id),
-    ADD CONSTRAINT FK_option_detail_menu_id FOREIGN KEY (menu_id) REFERENCES menu(menu_id),
-    ADD CONSTRAINT FK_option_detail_statuses_id FOREIGN KEY (menu_status_id) REFERENCES menu_status(menu_status_id);
+   ADD CONSTRAINT FK_otions_details_menu_option_id FOREIGN KEY (menu_option_id) REFERENCES menu_option(menu_option_id),
+   ADD CONSTRAINT FK_option_detail_menu_id FOREIGN KEY (menu_id) REFERENCES menu(menu_id),
+   ADD CONSTRAINT FK_option_detail_statuses_id FOREIGN KEY (menu_status_id) REFERENCES menu_status(menu_status_id);
 
 ALTER TABLE sale
-    ADD CONSTRAINT FK_sale_kiosk_id FOREIGN KEY (kiosk_id) REFERENCES kiosk(kiosk_id),
-    ADD CONSTRAINT FK_sale_sale_status_id FOREIGN KEY (sale_status_id) REFERENCES sale_status(sale_status_id),
-    ADD CONSTRAINT FK_sale_payment_method_id FOREIGN KEY (payment_method_id) REFERENCES payment_method(payment_method_id),
-    ADD CONSTRAINT FK_sale_sale_type_id FOREIGN KEY (sale_type_id) REFERENCES sale_type(sale_type_id);
+   ADD CONSTRAINT FK_sale_kiosk_id FOREIGN KEY (kiosk_id) REFERENCES kiosk(kiosk_id),
+   ADD CONSTRAINT FK_sale_sale_status_id FOREIGN KEY (sale_status_id) REFERENCES sale_status(sale_status_id),
+   ADD CONSTRAINT FK_sale_payment_method_id FOREIGN KEY (payment_method_id) REFERENCES payment_method(payment_method_id),
+   ADD CONSTRAINT FK_sale_sale_type_id FOREIGN KEY (sale_type_id) REFERENCES sale_type(sale_type_id);
 
 ALTER TABLE sale_item
-    ADD CONSTRAINT FK_sale_item_sale_id FOREIGN KEY (sale_id) REFERENCES sale(sale_id),
-    ADD CONSTRAINT FK_sale_item_menu_id FOREIGN KEY (menu_id) REFERENCES menu(menu_id);
+   ADD CONSTRAINT FK_sale_item_sale_id FOREIGN KEY (sale_id) REFERENCES sale(sale_id),
+   ADD CONSTRAINT FK_sale_item_menu_id FOREIGN KEY (menu_id) REFERENCES menu(menu_id);
 
 INSERT INTO user_role(role) VALUES
 	("ROLE_ADMIN"),
@@ -162,4 +162,14 @@ INSERT INTO menu_status(status) VALUES
 	("판매"),
 	("품절"),
 	("숨김"),
-	("옵션 추가");
+	("옵션");
+
+INSERT INTO category(cate) VALUES
+    ("추천메뉴"),
+    ("오리지널스&맥시멈"),
+    ("프리미엄"),
+    ("와퍼&주니어"),
+    ("치킨&슈림프버거"),
+    ("올데이킹&킹모닝"),
+    ("사이드"),
+    ("음료&디저트");

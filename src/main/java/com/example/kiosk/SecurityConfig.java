@@ -18,33 +18,19 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 @EnableWebSecurity // 모든 요청 URL이 스프링 시큐리티 제어를 받도록 함
 @EnableMethodSecurity(prePostEnabled = true) // @PreAuthorize이 사용하기 위한 설정
 public class SecurityConfig {
-//    @Bean // Bean: 스프링에 의해 생성 또는 관리되는 객체
-//    SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-//        // SecurityFilterChain: 필터 역할하여 URL별 설정 가능
-//        http.authorizeHttpRequests((authorizeHttpRequests) -> authorizeHttpRequests
-//                        // 모든 페이지에 모든 요청 허용
-//                        .requestMatchers(new AntPathRequestMatcher("/**")).permitAll())
-//                // 조건에 맞는 페이지는 csrf 검증 예외
-//                .csrf((csrf) -> csrf.ignoringRequestMatchers(new AntPathRequestMatcher("/h2-console/**")))
-//                .headers((headers) -> headers
-//                        .addHeaderWriter(new XFrameOptionsHeaderWriter(
-//                                XFrameOptionsHeaderWriter.XFrameOptionsMode.SAMEORIGIN)));
-//        return http.build();
-//    }
-
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/register", "/login", "/css/**", "/js/**").permitAll()
-                        .requestMatchers("/home").authenticated()  // home 인증 필요
+                        .requestMatchers("/**").authenticated()  // home 인증 필요
                         .anyRequest().permitAll()
                 )
                 .formLogin(form -> form
                         .loginPage("/login")
                         .loginProcessingUrl("/login")  // form action URL
-                        .defaultSuccessUrl("/home", true)
+                        .defaultSuccessUrl("/sale/type", true)
                         .permitAll()
                 )
                 .logout(logout -> logout

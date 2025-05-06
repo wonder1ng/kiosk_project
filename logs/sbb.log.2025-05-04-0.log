@@ -1,0 +1,155 @@
+2025-05-04 18:04:31.124  INFO 43828 --- [kiosk] [restartedMain] com.example.kiosk.KioskApplication       : Starting KioskApplication using Java 21.0.2 with PID 43828 (C:\myfolder\backup\study\gitws\fullstack_study\kiosk\build\classes\java\main started by why in C:\myfolder\backup\study\gitws\fullstack_study\kiosk)
+2025-05-04 18:04:31.132  INFO 43828 --- [kiosk] [restartedMain] com.example.kiosk.KioskApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-04 18:04:31.195  INFO 43828 --- [kiosk] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-04 18:04:31.196  INFO 43828 --- [kiosk] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-04 18:04:32.482  INFO 43828 --- [kiosk] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-04 18:04:32.570  INFO 43828 --- [kiosk] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 2 JPA repository interfaces.
+2025-05-04 18:04:33.948  INFO 43828 --- [kiosk] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-04 18:04:33.975  INFO 43828 --- [kiosk] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-04 18:04:33.976  INFO 43828 --- [kiosk] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-04 18:04:34.095  INFO 43828 --- [kiosk] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-04 18:04:34.096  INFO 43828 --- [kiosk] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2899 ms
+2025-05-04 18:04:34.366  INFO 43828 --- [kiosk] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-04 18:04:34.773  INFO 43828 --- [kiosk] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54c0fdd8
+2025-05-04 18:04:34.776  INFO 43828 --- [kiosk] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-04 18:04:34.958  INFO 43828 --- [kiosk] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-04 18:04:35.115  INFO 43828 --- [kiosk] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-04 18:04:35.179  INFO 43828 --- [kiosk] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-04 18:04:35.606  INFO 43828 --- [kiosk] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-04 18:04:35.691  WARN 43828 --- [kiosk] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-04 18:04:35.705  INFO 43828 --- [kiosk] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-04 18:04:36.869  INFO 43828 --- [kiosk] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-04 18:04:37.547  INFO 43828 --- [kiosk] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-04 18:04:37.602  WARN 43828 --- [kiosk] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-04 18:04:38.833  INFO 43828 --- [kiosk] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3307'
+2025-05-04 18:04:38.941  INFO 43828 --- [kiosk] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-04 18:04:38.980  INFO 43828 --- [kiosk] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-04 18:04:38.988  INFO 43828 --- [kiosk] [restartedMain] com.example.kiosk.KioskApplication       : Started KioskApplication in 8.469 seconds (process running for 9.056)
+2025-05-04 18:08:02.772  INFO 43828 --- [kiosk] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-04 18:08:02.773  INFO 43828 --- [kiosk] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-04 18:08:02.776  INFO 43828 --- [kiosk] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-04 18:15:20.276  INFO 43084 --- [kiosk] [restartedMain] com.example.kiosk.KioskApplication       : Starting KioskApplication using Java 21.0.2 with PID 43084 (C:\myfolder\backup\study\gitws\fullstack_study\kiosk\build\classes\java\main started by why in C:\myfolder\backup\study\gitws\fullstack_study\kiosk)
+2025-05-04 18:15:20.278  INFO 43084 --- [kiosk] [restartedMain] com.example.kiosk.KioskApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-04 18:15:20.344  INFO 43084 --- [kiosk] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-04 18:15:20.344  INFO 43084 --- [kiosk] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-04 18:15:21.389  INFO 43084 --- [kiosk] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-04 18:15:21.466  INFO 43084 --- [kiosk] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces.
+2025-05-04 18:15:22.625  INFO 43084 --- [kiosk] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-04 18:15:22.652  INFO 43084 --- [kiosk] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-04 18:15:22.652  INFO 43084 --- [kiosk] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-04 18:15:22.745  INFO 43084 --- [kiosk] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-04 18:15:22.746  INFO 43084 --- [kiosk] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2401 ms
+2025-05-04 18:15:22.997  INFO 43084 --- [kiosk] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-04 18:15:23.348  INFO 43084 --- [kiosk] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ffa65e3
+2025-05-04 18:15:23.350  INFO 43084 --- [kiosk] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-04 18:15:23.504  INFO 43084 --- [kiosk] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-04 18:15:23.633  INFO 43084 --- [kiosk] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-04 18:15:23.681  INFO 43084 --- [kiosk] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-04 18:15:24.044  INFO 43084 --- [kiosk] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-04 18:15:24.116  WARN 43084 --- [kiosk] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-04 18:15:24.131  INFO 43084 --- [kiosk] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-04 18:15:25.218  INFO 43084 --- [kiosk] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-04 18:15:25.918  INFO 43084 --- [kiosk] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-04 18:15:25.988  WARN 43084 --- [kiosk] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-04 18:15:27.620  INFO 43084 --- [kiosk] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3307'
+2025-05-04 18:15:27.751  INFO 43084 --- [kiosk] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-04 18:15:27.799  INFO 43084 --- [kiosk] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-04 18:15:27.808  INFO 43084 --- [kiosk] [restartedMain] com.example.kiosk.KioskApplication       : Started KioskApplication in 8.047 seconds (process running for 8.58)
+2025-05-04 18:15:27.893  INFO 43084 --- [kiosk] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-04 18:15:27.893  INFO 43084 --- [kiosk] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-04 18:15:27.895  INFO 43084 --- [kiosk] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-04 19:58:36.374  INFO 30288 --- [kiosk] [restartedMain] com.example.kiosk.KioskApplication       : Starting KioskApplication using Java 21.0.6 with PID 30288 (C:\myfolder\backup\study\gitws\fullstack_study\kiosk\bin\main started by why in C:\myfolder\backup\study\gitws\fullstack_study\kiosk)
+2025-05-04 19:58:36.377  INFO 30288 --- [kiosk] [restartedMain] com.example.kiosk.KioskApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-04 19:58:36.436  INFO 30288 --- [kiosk] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-04 19:58:36.437  INFO 30288 --- [kiosk] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-04 19:58:37.701  INFO 30288 --- [kiosk] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-04 19:58:37.800  INFO 30288 --- [kiosk] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 2 JPA repository interfaces.
+2025-05-04 19:58:38.783  INFO 30288 --- [kiosk] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-04 19:58:38.805  INFO 30288 --- [kiosk] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-04 19:58:38.806  INFO 30288 --- [kiosk] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-04 19:58:38.914  INFO 30288 --- [kiosk] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-04 19:58:38.915  INFO 30288 --- [kiosk] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2477 ms
+2025-05-04 19:58:39.145  INFO 30288 --- [kiosk] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-04 19:58:39.735  INFO 30288 --- [kiosk] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@370b671b
+2025-05-04 19:58:39.739  INFO 30288 --- [kiosk] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-04 19:58:39.973  INFO 30288 --- [kiosk] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-04 19:58:40.110  INFO 30288 --- [kiosk] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-04 19:58:40.192  INFO 30288 --- [kiosk] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-04 19:58:40.635  INFO 30288 --- [kiosk] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-04 19:58:40.716  WARN 30288 --- [kiosk] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-04 19:58:40.732  INFO 30288 --- [kiosk] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-04 19:58:41.890  INFO 30288 --- [kiosk] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-04 19:58:42.886  INFO 30288 --- [kiosk] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-04 19:58:43.002  WARN 30288 --- [kiosk] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-04 19:58:44.019  INFO 30288 --- [kiosk] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3307'
+2025-05-04 19:58:44.115  INFO 30288 --- [kiosk] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-04 19:58:44.174  INFO 30288 --- [kiosk] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-04 19:58:44.184  INFO 30288 --- [kiosk] [restartedMain] com.example.kiosk.KioskApplication       : Started KioskApplication in 8.396 seconds (process running for 10.102)
+2025-05-04 19:58:59.832  INFO 30288 --- [kiosk] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-04 19:58:59.832  INFO 30288 --- [kiosk] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-04 19:58:59.834  INFO 30288 --- [kiosk] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-04 19:59:14.475  INFO 30288 --- [kiosk] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-05-04 19:59:14.479  INFO 30288 --- [kiosk] [RMI TCP Connection(10)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-04 19:59:14.495  INFO 30288 --- [kiosk] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-04 19:59:14.501  INFO 30288 --- [kiosk] [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-04 19:59:14.505  INFO 30288 --- [kiosk] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-04 19:59:14.529  INFO 30288 --- [kiosk] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-04 20:17:38.615  INFO 27996 --- [kiosk] [restartedMain] com.example.kiosk.KioskApplication       : Starting KioskApplication using Java 21.0.2 with PID 27996 (C:\myfolder\backup\study\gitws\fullstack_study\kiosk\build\classes\java\main started by why in C:\myfolder\backup\study\gitws\fullstack_study\kiosk)
+2025-05-04 20:17:38.618  INFO 27996 --- [kiosk] [restartedMain] com.example.kiosk.KioskApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-04 20:17:38.666  INFO 27996 --- [kiosk] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-04 20:17:38.667  INFO 27996 --- [kiosk] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-04 20:17:39.506  INFO 27996 --- [kiosk] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-04 20:17:39.570  INFO 27996 --- [kiosk] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+2025-05-04 20:17:40.497  INFO 27996 --- [kiosk] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-04 20:17:40.520  INFO 27996 --- [kiosk] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-04 20:17:40.520  INFO 27996 --- [kiosk] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-04 20:17:40.593  INFO 27996 --- [kiosk] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-04 20:17:40.593  INFO 27996 --- [kiosk] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1925 ms
+2025-05-04 20:17:40.816  INFO 27996 --- [kiosk] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-04 20:17:41.145  INFO 27996 --- [kiosk] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6fdfad41
+2025-05-04 20:17:41.146  INFO 27996 --- [kiosk] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-04 20:17:41.245  INFO 27996 --- [kiosk] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-04 20:17:41.323  INFO 27996 --- [kiosk] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-04 20:17:41.361  INFO 27996 --- [kiosk] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-04 20:17:41.678  INFO 27996 --- [kiosk] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-04 20:17:41.733  WARN 27996 --- [kiosk] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-04 20:17:41.745  INFO 27996 --- [kiosk] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-04 20:17:42.609  INFO 27996 --- [kiosk] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-04 20:17:43.177  INFO 27996 --- [kiosk] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-04 20:17:43.526  WARN 27996 --- [kiosk] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-04 20:17:44.260  INFO 27996 --- [kiosk] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3307'
+2025-05-04 20:17:44.373  INFO 27996 --- [kiosk] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-04 20:17:44.400  INFO 27996 --- [kiosk] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-04 20:17:44.406  INFO 27996 --- [kiosk] [restartedMain] com.example.kiosk.KioskApplication       : Started KioskApplication in 6.213 seconds (process running for 6.618)
+2025-05-04 20:17:49.031  INFO 27996 --- [kiosk] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-04 20:17:49.031  INFO 27996 --- [kiosk] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-04 20:17:49.032  INFO 27996 --- [kiosk] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-04 20:17:59.099  WARN 27996 --- [kiosk] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]

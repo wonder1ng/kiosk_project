@@ -1,6 +1,6 @@
 package com.example.kiosk.entity;
 
-import com.example.kiosk.dto.UserJoinDto;
+import com.example.kiosk.dto.UserRegisterDto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -46,19 +46,19 @@ public class UserEntity {
     //@DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDateTime createdAt;
 
-    public UserJoinDto toSaveDto(){
-        return UserJoinDto.builder()
-                .id(id)
-                .signId(signId)
-                .password(password)
-                .phoneNumber(phoneNumber)
-                .faxNumber(faxNumber)
-                .zipCode(zipCode)
-                .streetAddress(streetAddress)
-                .detailAddress(detailAddress)
-                .companyName(companyName)
-                .branch(branch)
-                .businessNumber(businessNumber)
-                .build();
-    }
+//    public UserRegisterDto toSaveDto(){
+//        return UserRegisterDto.builder()
+//                .id(id)
+//                .signId(signId)
+//                .password(password)
+//                .phoneNumber(phoneNumber)
+//                .faxNumber(faxNumber)
+//                .zipCode(zipCode)
+//                .streetAddress(streetAddress)
+//                .detailAddress(detailAddress)
+//                .companyName(companyName)
+//                .branch(branch)
+//                .businessNumber(businessNumber)
+//                .build();
+//    }
 }

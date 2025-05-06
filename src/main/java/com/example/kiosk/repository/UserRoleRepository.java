@@ -2,6 +2,8 @@ package com.example.kiosk.repository;
 
 import com.example.kiosk.entity.UserRoleEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface UserRoleRepository extends JpaRepository<UserRoleEntity, Byte> {
+@Repository
+public interface UserRoleRepository extends JpaRepository<UserRoleEntity, Short> {
 }

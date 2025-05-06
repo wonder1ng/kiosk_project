@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>메뉴 페이지</title>
+</head>
+<body>
+<h1 th:text="'선택된 유형: ' + ${saleType}">선택된 유형</h1>
+
+<!-- 다음 페이지로 saleType도 넘기고 싶을 경우 hidden input으로 유지 -->
+<form action="/option" method="get">
+  <input type="hidden" name="saleType" th:value="${saleType}" />
+  <button type="submit">다음으로</button>
+</form>
+</body>
+</html>

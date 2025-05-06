@@ -1,6 +1,6 @@
 package com.example.kiosk.controller;
 
-import com.example.kiosk.dto.UserJoinDto;
+import com.example.kiosk.dto.UserRegisterDto;
 import com.example.kiosk.dto.UserLoginDto;
 import com.example.kiosk.entity.UserEntity;
 import com.example.kiosk.entity.UserRepository;
@@ -108,7 +108,7 @@ public class HtmlController {
 
     @PostMapping("/joinAction")
     @ResponseBody
-    public String joinAction(@Valid @ModelAttribute UserJoinDto dto,
+    public String joinAction(@Valid @ModelAttribute UserRegisterDto dto,
                              BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             String detail = bindingResult.getFieldError().getDefaultMessage();
@@ -147,7 +147,7 @@ public class HtmlController {
 
     @PostMapping("/modifyAction")
     @ResponseBody
-    public String modifyAction(@ModelAttribute UserJoinDto dto) {
+    public String modifyAction(@ModelAttribute UserRegisterDto dto) {
         try {
             UserEntity entity = dto.toUpdateEntity();
             userRepository.save(entity);
